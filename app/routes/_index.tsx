@@ -1,12 +1,12 @@
-import type { MetaFunction } from "@remix-run/node";
-import { Button } from "~/components/button";
+import type { MetaFunction } from '@remix-run/node'
+import { Button } from '~/components/button'
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Welcome to Remix" },
-    { name: "description", content: "Welcome to Remix!" },
-  ];
-};
+    { title: 'Welcome to Remix' },
+    { name: 'description', content: 'Welcome to Remix!' },
+  ]
+}
 
 export default function Index() {
   return (
@@ -24,5 +24,5 @@ export default function Index() {
         </div>
       </div>
     </div>
-  );
+  )
 }
