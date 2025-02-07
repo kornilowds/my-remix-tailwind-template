@@ -9,7 +9,8 @@
     "start": "remix-serve ./build/server/index.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.1",
@@ -41,6 +42,8 @@
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^4.6.0",
     "globals": "^15.14.0",
+    "husky": ">=7",
+    "lint-staged": ">=10",
     "postcss": "^8.4.38",
     "prettier": "3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.11",
@@ -52,5 +55,11 @@
   },
   "engines": {
     "node": ">=20.0.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "prettier --write",
+      "eslint --max-warnings 0 ."
+    ]
   }
 }
