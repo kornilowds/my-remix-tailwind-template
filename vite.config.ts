@@ -1,8 +1,9 @@
 import { vitePlugin as remix } from '@remix-run/dev'
-import { defineConfig } from 'vite'
-import tsconfigPaths from 'vite-tsconfig-paths'
-import Inspect from 'vite-plugin-inspect'
 import tailwindcss from '@tailwindcss/vite'
+import { defineConfig } from 'vite'
+import Inspect from 'vite-plugin-inspect'
+import tsconfigPaths from 'vite-tsconfig-paths'
+
 declare module '@remix-run/node' {
   interface Future {
     v3_singleFetch: true
