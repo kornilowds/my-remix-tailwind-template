@@ -20,7 +20,7 @@ export default function Index() {
 
         <div className="flex gap-3">
           <Button>Go to app</Button>
-          <Button variant="secondary">Learn more</Button>
+          <Button variant="secondary">GitHub</Button>
         </div>
       </div>
     </div>
